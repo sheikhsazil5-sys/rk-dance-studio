@@ -1,0 +1,463 @@
+/* ===============================
+   REGISTRATION PAGE
+================================ */
+/* ===============================
+   REGISTRATION PAGE
+================================ */
+
+.registration-page {
+  width: 100%;
+  min-height: 100vh;
+  background: #08090b;
+  color: white;
+  overflow-x: hidden;
+}
+
+.registration-hero {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+
+  padding: 110px 8% 80px;
+
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 70px;
+
+  align-items: center;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+/* GLOW */
+
+.registration-glow {
+  position: absolute;
+  width: 450px;
+  height: 450px;
+  border-radius: 50%;
+  filter: blur(140px);
+  opacity: 0.12;
+  background: #d4a63f;
+}
+
+.glow-one {
+  top: -150px;
+  left: -150px;
+}
+
+.glow-two {
+  bottom: -150px;
+  right: -150px;
+}
+
+/* LEFT */
+
+.registration-left {
+  position: relative;
+  z-index: 2;
+}
+
+.registration-tag {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  color: #d4a63f;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.registration-left h1 {
+  margin: 20px 0;
+
+  font-size: clamp(55px, 7vw, 110px);
+  line-height: 0.9;
+  letter-spacing: -4px;
+}
+
+.registration-left h1 span {
+  color: #d4a63f;
+}
+
+.registration-description {
+  max-width: 550px;
+
+  color: #b9b9b9;
+  font-size: 17px;
+  line-height: 1.8;
+}
+
+.registration-points {
+  margin-top: 35px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.registration-points div {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.registration-points svg {
+  color: #d4a63f;
+}
+
+/* FORM */
+
+.registration-form-wrapper {
+  position: relative;
+  z-index: 3;
+
+  padding: 45px;
+  background: #111214;
+
+  border: 1px solid #282a2e;
+}
+
+.form-top {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+
+  margin-bottom: 35px;
+}
+
+.form-top > span {
+  color: #d4a63f;
+
+  font-size: 45px;
+  font-weight: 900;
+}
+
+.form-top p {
+  margin: 0 0 5px;
+
+  color: #d4a63f;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.form-top h2 {
+  margin: 0;
+
+  font-size: 28px;
+  letter-spacing: 1px;
+}
+
+/* FORM GRID */
+
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+/* FORM GROUP */
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 9px;
+
+  color: #a7a7a7;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.input-box {
+  display: flex;
+  align-items: center;
+
+  background: #0d0e10;
+  border: 1px solid #282a2e;
+}
+
+.input-box:focus-within {
+  border-color: #d4a63f;
+}
+
+.input-box svg {
+  margin-left: 15px;
+  color: #d4a63f;
+}
+
+.input-box input {
+  width: 100%;
+  padding: 16px;
+
+  border: none;
+  outline: none;
+
+  background: transparent;
+  color: white;
+}
+
+.form-group select {
+  width: 100%;
+  padding: 16px;
+
+  background: #0d0e10;
+  color: white;
+
+  border: 1px solid #282a2e;
+  outline: none;
+}
+
+.form-group select:focus {
+  border-color: #d4a63f;
+}
+
+/* FEE BOX */
+
+.fee-box {
+  margin: 25px 0;
+
+  padding: 22px;
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  box-sizing: border-box;
+
+  background: #0d0e10;
+  border: 1px solid rgba(212, 166, 63, 0.4);
+}
+
+.fee-box span {
+  color: #d4a63f;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.fee-box h3 {
+  margin: 7px 0 0;
+
+  color: #d4a63f;
+  font-size: 35px;
+}
+
+.fee-box p {
+  color: #999;
+  font-size: 11px;
+  letter-spacing: 1px;
+  text-align: right;
+}
+
+/* PAYMENT METHODS */
+
+.payment-methods {
+  width: 100%;
+  margin: 25px 0;
+}
+
+.payment-method-title {
+  margin-bottom: 15px;
+
+  color: #d4a63f;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.payment-options {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.payment-option {
+  display: block;
+  width: 100%;
+  cursor: pointer;
+}
+
+.payment-option input {
+  display: none;
+}
+
+.payment-option-content {
+  width: 100%;
+  min-height: 80px;
+  padding: 18px 20px;
+
+  display: flex;
+  align-items: center;
+  gap: 16px;
+
+  box-sizing: border-box;
+
+  background: #0d0e10;
+  border: 1px solid #282a2e;
+
+  transition: 0.3s;
+}
+
+.payment-option-content:hover {
+  border-color: #d4a63f;
+}
+
+.payment-option input:checked + .payment-option-content {
+  border-color: #d4a63f;
+  background: rgba(212, 166, 63, 0.08);
+}
+
+.payment-option-content > span:first-child {
+  font-size: 24px;
+}
+
+.payment-option-content > span:last-child {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.payment-option strong {
+  color: white;
+  font-size: 13px;
+  letter-spacing: 1px;
+}
+
+.payment-option small {
+  color: #8c8c8c;
+  font-size: 11px;
+  line-height: 1.5;
+}
+
+/* SUBMIT BUTTON */
+
+.registration-submit {
+  width: 100%;
+  padding: 18px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+
+  border: none;
+  cursor: pointer;
+
+  background: #d4a63f;
+  color: #08090b;
+
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: 2px;
+
+  transition: 0.3s;
+}
+
+.registration-submit:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 30px rgba(212, 166, 63, 0.25);
+}
+
+/* NOTE */
+
+.form-note {
+  margin-top: 20px;
+  text-align: center;
+
+  color: #666;
+  font-size: 11px;
+}
+
+/* SUCCESS */
+
+.success-box {
+  min-height: 500px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+}
+
+.success-icon {
+  color: #d4a63f;
+}
+
+.success-box p {
+  margin-top: 25px;
+
+  color: #d4a63f;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.success-box h2 {
+  margin: 12px 0;
+
+  font-size: 45px;
+}
+
+.success-box > span {
+  max-width: 350px;
+
+  color: #999;
+  line-height: 1.7;
+}
+
+.success-box button {
+  margin-top: 30px;
+}
+
+/* MOBILE */
+
+@media (max-width: 900px) {
+
+  .registration-hero {
+    grid-template-columns: 1fr;
+    padding: 120px 6% 60px;
+    gap: 50px;
+  }
+
+  .registration-form-wrapper {
+    padding: 30px;
+  }
+
+  .registration-left h1 {
+    font-size: 65px;
+  }
+}
+
+@media (max-width: 600px) {
+
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .registration-form-wrapper {
+    padding: 22px;
+  }
+
+  .fee-box {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .fee-box p {
+    text-align: left;
+  }
+}

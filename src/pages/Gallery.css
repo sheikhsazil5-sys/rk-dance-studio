@@ -1,0 +1,169 @@
+.gallery-page {
+  min-height: 100vh;
+  background: #050505;
+  color: white;
+}
+
+/* HERO */
+
+.gallery-hero {
+  min-height: 520px;
+  padding: 150px 8% 70px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  background:
+    radial-gradient(
+      circle at 50% 30%,
+      rgba(212, 166, 63, 0.12),
+      transparent 40%
+    ),
+    #050505;
+}
+
+.gallery-tag {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  color: #d4a63f;
+
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 3px;
+}
+
+.gallery-hero h1 {
+  font-family: "Anton", sans-serif;
+
+  font-size: clamp(65px, 10vw, 140px);
+  line-height: 0.9;
+
+  margin: 25px 0;
+}
+
+.gallery-hero h1 span {
+  color: #d4a63f;
+}
+
+.gallery-description {
+  max-width: 650px;
+
+  color: #aaa;
+
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+/* GALLERY */
+
+.gallery-section {
+  padding: 80px 8% 120px;
+}
+
+.gallery-grid {
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 25px;
+}
+
+.gallery-card {
+  position: relative;
+
+  height: 420px;
+
+  overflow: hidden;
+
+  background: #111;
+
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.gallery-card img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  transition: transform 0.6s ease;
+}
+
+.gallery-card:hover img {
+  transform: scale(1.08);
+}
+
+.gallery-overlay {
+  position: absolute;
+
+  inset: 0;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+  padding: 35px;
+
+  background:
+    linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.9),
+      rgba(0, 0, 0, 0.1)
+    );
+}
+
+.gallery-overlay > span {
+  color: #d4a63f;
+
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 2px;
+
+  margin-bottom: 12px;
+}
+
+.gallery-overlay div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.gallery-overlay h2 {
+  margin: 0;
+
+  font-family: "Anton", sans-serif;
+
+  font-size: 38px;
+
+  letter-spacing: 1px;
+}
+
+.gallery-overlay svg {
+  color: #d4a63f;
+}
+
+@media (max-width: 750px) {
+  .gallery-hero {
+    min-height: 430px;
+    padding: 130px 25px 70px;
+  }
+
+  .gallery-hero h1 {
+    font-size: 65px;
+  }
+
+  .gallery-section {
+    padding: 50px 25px 80px;
+  }
+
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery-card {
+    height: 330px;
+  }
+}

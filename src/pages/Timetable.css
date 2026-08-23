@@ -1,0 +1,282 @@
+.timetable-page {
+  min-height: 100vh;
+  background: #050505;
+  color: #ffffff;
+}
+
+/* HERO */
+
+.timetable-hero {
+  min-height: 500px;
+  padding: 160px 10% 80px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  background:
+    radial-gradient(
+      circle at 65% 35%,
+      rgba(212, 166, 63, 0.12),
+      transparent 40%
+    ),
+    #050505;
+}
+
+.timetable-tag {
+  color: #d4a63f;
+
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 3px;
+}
+
+.timetable-hero h1 {
+  font-family: "Anton", sans-serif;
+
+  font-size: clamp(70px, 10vw, 150px);
+  line-height: 0.85;
+
+  margin: 25px 0;
+}
+
+.timetable-hero h1 span {
+  color: #d4a63f;
+}
+
+.timetable-description {
+  max-width: 550px;
+
+  color: #aaaaaa;
+
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+/* SCHEDULE */
+
+.schedule-section {
+  padding: 100px 10%;
+}
+
+.schedule-heading {
+  text-align: center;
+
+  margin-bottom: 70px;
+}
+
+.schedule-heading p {
+  color: #d4a63f;
+
+  font-size: 10px;
+  font-weight: 800;
+
+  letter-spacing: 3px;
+}
+
+.schedule-heading h2 {
+  font-family: "Anton", sans-serif;
+
+  font-size: clamp(50px, 7vw, 100px);
+
+  margin: 20px 0 0;
+}
+
+.schedule-heading h2 span {
+  color: #d4a63f;
+}
+
+/* CARDS */
+
+.schedule-grid {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 25px;
+
+  max-width: 1300px;
+
+  margin: auto;
+}
+
+.schedule-card {
+  position: relative;
+
+  padding: 40px 30px;
+
+  background: #0c0c0c;
+
+  border: 1px solid rgba(255, 255, 255, 0.08);
+
+  overflow: hidden;
+
+  transition: 0.4s ease;
+}
+
+.schedule-card:hover {
+  transform: translateY(-10px);
+
+  border-color: #d4a63f;
+}
+
+.schedule-number {
+  position: absolute;
+
+  top: 20px;
+  right: 25px;
+
+  color: #333;
+
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.schedule-icon {
+  color: #d4a63f;
+
+  margin-bottom: 25px;
+}
+
+.schedule-age {
+  color: #d4a63f;
+
+  font-size: 9px;
+  font-weight: 800;
+
+  letter-spacing: 2px;
+}
+
+.schedule-card h3 {
+  font-family: "Anton", sans-serif;
+
+  font-size: 50px;
+
+  margin: 15px 0;
+}
+
+.schedule-time {
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  margin: 25px 0;
+
+  padding: 15px;
+
+  background: #141414;
+
+  color: #ffffff;
+}
+
+.schedule-time svg {
+  color: #d4a63f;
+}
+
+.schedule-time span {
+  font-weight: 700;
+
+  font-size: 15px;
+}
+
+.schedule-description {
+  color: #888;
+
+  font-size: 14px;
+
+  line-height: 1.7;
+
+  min-height: 75px;
+}
+
+.schedule-line {
+  width: 100%;
+  height: 1px;
+
+  background: rgba(255, 255, 255, 0.1);
+
+  margin: 25px 0;
+}
+
+.schedule-class {
+  color: #d4a63f;
+
+  font-size: 10px;
+  font-weight: 800;
+
+  letter-spacing: 2px;
+}
+
+/* DAYS */
+
+.days-section {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+  gap: 20px;
+
+  margin: 0 10% 100px;
+
+  padding: 30px;
+
+  background: #d4a63f;
+
+  color: #050505;
+}
+
+.days-section p {
+  font-size: 9px;
+
+  font-weight: 900;
+
+  letter-spacing: 2px;
+}
+
+.days-section h3 {
+  font-family: "Anton", sans-serif;
+
+  font-size: 28px;
+
+  margin: 5px 0 0;
+}
+
+/* TABLET */
+
+@media (max-width: 900px) {
+  .schedule-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .schedule-card {
+    max-width: 550px;
+    width: 100%;
+
+    margin: auto;
+  }
+}
+
+/* MOBILE */
+
+@media (max-width: 650px) {
+  .timetable-hero {
+    padding: 140px 25px 70px;
+  }
+
+  .schedule-section {
+    padding: 70px 25px;
+  }
+
+  .timetable-hero h1 {
+    font-size: 65px;
+  }
+
+  .days-section {
+    margin: 0 25px 70px;
+
+    padding: 25px 20px;
+  }
+}
